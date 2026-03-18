@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssgrid.css">
+    <link rel="stylesheet" href="flag.css"> 
+    <title>João Vidreiro</title>
+     <meta name="description" content="Página portfolio em estilo inspirado, com cores idênticas e estrutura própria." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+<script type="text/javascript">
+  (function(){
+    emailjs.init("B0ruB_RBvCZBnNEuj"); // ⚡ mete aqui o teu Public Key real
+  })();
+</script>
+  
+</head>
+
+    <body>
+  <div class="wrap">
+    <aside>
+      <div style="display: flex;align-items: center;">
+            <img src="imgs/profile.png" class="profilePic"alt="João Vidreiro profile" />
+        </div>
+      <div class="brand">
+        <div class="logo">J</div>
+        <div>
+          <h1>João Vidreiro</h1>
+          <div class="tag"> Web Dev</div>
+        </div>
+      </div>
+
+      
+
+      <nav>
+        <a class="navlink" href="#sobre"><span>Sobre</span></a>
+        <a class="navlink" href="#servicos"><span>Serviços</span></a>
+        <a class="navlink" href="#trabalhos"><span>Trabalhos</span></a>
+        <a class="navlink" href="#experiencia"><span>Experiência</span></a>
+        <a class="navlink" href="#contacto"><span>Contacto</span></a>
+      </nav>
+      
+      <div class="cta">
+        
+    <div class="flag-container">
+     <canvas id="canvas" width="100" height="50"></canvas>
+        
+</div>
+
+<a class="btn" href="doc/port25_eng.pdf" target="_blank">Baixar CV</a>
+        <a class="btn filled" href="#contacto">Diga olá</a>
+      </div>
+    </aside>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero reveal" id="inicio">
+        <div class="eyebrow">Olá, eu sou </div>
+        <h2>João Vidreiro um <span style="color:var(--green)">desenvolvedor Web focado  </span> em aprender! </h2>
+        <p>Tenho 27 anos, nascido em Lisboa, sempre a par das novas tecnologias, e busco competir internacionalmente em contextos profissionais, criando interfaces escaláveis e código sustentável.</p>
+        <div class="chips">
+          <span class="chip mono">HTML</span>
+          <span class="chip mono">CSS</span>
+          <span class="chip mono">PHP</span>
+          <span class="chip mono">JavaScript</span>
+          <span class="chip mono">Node.js</span>
+          <span class="chip mono">React</span>
+          <span class="chip mono">UX</span>
+          <span class="chip mono">IX</span>
+          <span class="chip mono">API Rest</span>
+          
+        </div>
+      </section>
+
+      <!-- Sobre -->
+      <section id="sobre" class="reveal">
+        <div class="eyebrow">Sobre</div>
+        <h2>Quem sou</h2>
+        <p>Apaixonado por construir e trabalhar em equipa. Sempre tive interesse por engenharia, que inicialmente seguia mais como hobby, mas este ano decidi levar a sério e aprender aquilo que sempre quis.</p>
+        <div class="grid" style="margin-top:12px">
+          <div class="col-6">
+            <div class="card">
+              <h3>Percurso</h3>
+              <p>Tentei várias áreas de trabalho, seguindo sempre aqueles que me inspiraram, desenvolvendo diversas competências e soft skills que moldaram quem sou hoje
+              </p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card">
+              <h3>Motto TripleS</h3>
+              <p style="display: flex; align-items: center;">Sustento • Saúde • Saber.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Serviços (estrutura em cartões) -->
+      <section id="servicos" class="reveal">
+        <div class="eyebrow">Serviços</div>
+        <h2>Como posso ajudar</h2>
+        <div class="grid">
+          <div class="col-4"><div class="card"><h3>Frontend</h3><p>Criação de sistemas de design, protótipos e guias de estilo consistentes.</p><div class="meta mono">Figma, Photoshop, CSS</div></div></div>
+          <div class="col-4"><div class="card"><h3>User Experience</h3><p>Fluididez da experiencia do utilizador e integração com APIs.</p><div class="meta mono">React, Next.js, JavaScript</div></div></div>
+          <div class="col-4"><div class="card"><h3>Backend</h3><p>Ligação á base de dados , segurança contra injecção SQL </p><div class="meta mono">SEO, SQL, Php</div></div></div>
+        </div>
+      </section>
+
+      <!-- Trabalhos (galeria em grade) -->
+      <section id="trabalhos" class="reveal">
+        <div class="eyebrow">Trabalhos</div>
+        <h2>Sobre page = info + github</h2>
+        
+        <div class="grid">
+          <div class="col-6">
+            <a class="card" href="#" aria-label="Projeto 1">
+              <i class="fa-solid fa-briefcase"></i>
+              <a href="spoto.html"><h3>Spoto</h3></a>
+              <p>Plataforma para divulgação de espaços de aluguer.</p>
+              <div class="meta mono">React • Node.js • SQL • Websockets • REST API</div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a class="card" href="#" aria-label="Projeto 2">
+              <i class="fa-regular fa-file"></i>
+              <a href="https://plataformateste.wuaze.com/index.php" target="_blank"><h3>Website backend php </h3></a>
+              <p>Sistema de login e opensource</p>
+              <div class="meta mono">Next.js • SEO • CWV</div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a class="card" href="#" aria-label="Projeto 3">
+              <i class="fa-regular fa-file"></i>
+              <a href="https://barbershoptest.infinityfree.me" target="_blank"><h3>Modelo de site com php</h3></a>
+              <p>PWA com checkout otimizado e integração com CMS.</p>
+              <div class="meta mono">html • PHP • JS</div>
+            </a>
+          </div>
+         
+        </div>
+      </section>
+
+      <!-- Experiência (timeline) -->
+      <section id="experiencia" class="reveal">
+        <div class="eyebrow">Experiência Profissional</div>
+        <h2>Carreira em destaque</h2>
+        <div class="timeline">
+          <div class="titem">
+            <h3>Contacto ao Cliente Bolt, Majorel <span class="meta">(2023 — 2025)</span></h3>
+            <p> Liderança técnica, mentoria e arquitetura de frontends escaláveis. </p>
+          </div>
+          <div class="titem">
+            <h3>Contacto ao Cliente CUF, Intelcia <span class="meta">(2021 — 2023)</span></h3>
+            <p> Linha de atendimento dos hospitais CUF e manutenção da agenda dos profissionais. </p>
+          </div>
+          <div class="titem">
+            <h3>Manutenção de Site, Kids.com.pt <span class="meta">(2017 — 2018)</span></h3>
+            <p> Postagem de artigos para melhorar o SEO assim como manutençao em Wordpress. </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacto (formulário simples) -->
+      <section id="contacto"  class="reveal">
+        <div class="eyebrow">Contacto</div>
+        <h2>Vamos conversar</h2>
+        <p>Tem um projeto em mente? Envie uma mensagem — respondo o mais rápido possível.</p>
+        <form id="contact-form">
+          <div>
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" required placeholder="O seu nome" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" required type="email" placeholder="voce@exemplo.com" />
+          </div>
+          <div>
+            <label for="msg">Mensagem</label>
+            <textarea id="msg" name="mensagem" rows="5" required placeholder="Como posso ajudar?"></textarea>
+          </div>
+          <button class="btn filled" type="submit">Enviar mensagem</button>
+        </form>
+      </section>
+
+      <!-- CV âncora -->
+      <section id="cv" class="reveal">
+        <div class="eyebrow">Pontos de comunicação</div>
+        <h2>Nunca tive redes socais</h2>
+        <p>Estes são os meus endpoints de comunicação</p>
+        <div class="chips">
+          <span class="chip mono">mkjoao1@gmail.com</span>
+          <span class="chip mono">pt-960370208</span>
+          <a href="https://www.linkedin.com/in/joao-vidreiro" target="_blank">
+          <span class="chip mono">LinkedIn</span>
+          </a>
+          <a href="https://github.com/Vidreiro98" target="_blank">
+          <span class="chip mono">GitHub</span>
+          </a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <div class="mono">Construído com ♥ — cores do tema original, estrutura nova. © <span id="year"></span></div>
+ <script>
+  const form = document.getElementById('contact-form');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    emailjs.sendForm('Portofolio','template_lz0rk5l', this)
+      .then(() => {
+        alert('Obrigado! Mensagem enviada.');
+        form.reset();
+      }, (err) => {
+        alert('Erro ao enviar: ' + JSON.stringify(err));
+      });
+  });
+</script>
+    <script src="flag.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssgrid.css">
+    <link rel="stylesheet" href="flag.css"> 
+    <title>João Vidreiro</title>
+     <meta name="description" content="Página portfolio em estilo inspirado, com cores idênticas e estrutura própria." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function(){
+    emailjs.init("B0ruB_RBvCZBnNEuj"); // ⚡ mete aqui o teu Public Key real
+  })();
+</script>
+
+</head>
+
+    <body>
+  <div class="wrap">
+    <aside>
+      <div class="brand">
+        <div class="logo">J</div>
+        <div>
+          <h1>João Vidreiro</h1>
+          <div class="tag">Web Dev</div>
+        </div>
+      </div>
+
+      <nav>
+        <a class="navlink" href="index.html"><span>Home</span></a>
+        <a class="navlink" href="#servicos"><span>Serviços</span></a>
+        <a class="navlink" href="#trabalhos"><span>Trabalhos</span></a>
+        <a class="navlink" href="#experiencia"><span>Experiência</span></a>
+        <a class="navlink" href="#contacto"><span>Contacto</span></a>
+      </nav>
+      
+      <div class="cta">
+        
+    <div class="flag-container">
+     <canvas id="canvas" width="100" height="50"></canvas>
+        
+</div>
+
+<a class="btn" href="doc/port25_eng.pdf" target="_blank">Baixar CV</a>
+        <a class="btn filled" href="#contacto">Diga olá</a>
+      </div>
+    </aside>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero reveal" id="inicio">
+        <div class="eyebrow">O meu Projecto </div>
+        <h2><span style="color:var(--green)">Spoto  </span> Mobile app para alugar espaços. </h2>
+        <div class="bloco-video-container">
+        <video src="2025-09-11-09-22-54_dMXjqdFy.mp4" autoplay loop muted alt="Spoto App" class="bloco-imagem" controls></video></div>
+
+        <div class="chips">
+          <span class="chip mono">HTML</span>
+          <span class="chip mono">CSS</span>
+          <span class="chip mono">PHP</span>
+          <span class="chip mono">JavaScript</span>
+          <span class="chip mono">Node.js</span>
+          <span class="chip mono">React</span>
+          <span class="chip mono">UX</span>
+          <span class="chip mono">IX</span>
+          <span class="chip mono">API'R</span>
+          <span class="chip mono">Figma</span>
+          
+        </div>
+      </section>
+
+      <!-- Sobre -->
+     <section id="context" class="reveal">
+  <div class="eyebrow">Contexto</div>
+  <h2><b>Motivação do Projeto</b></h2>
+  <p>
+    Este projeto foi desenvolvido no âmbito do <b>projeto final do curso de Programação Web</b>.
+    O objetivo principal não foi apenas entregar uma aplicação funcional, mas sim explorar o processo completo
+    de desenvolvimento de uma aplicação web moderna.<br><br>
+    Optei por experimentar diferentes abordagens e tecnologias — como <b>React</b> e <b>WebSockets</b> —
+    de forma a consolidar conhecimentos e compreender melhor os desafios de integração,
+    mesmo que isso resultasse numa stack menos uniforme.<br><br>
+    Apesar das dificuldades no <b>deploy</b>, nomeadamente relacionadas com o <b>package-lock.json</b>,
+    configuração de <b>CI/CD</b> e a biblioteca <b>express-session</b>,
+    considero que este projeto foi fundamental para adquirir experiência prática e perceber como diferentes peças
+    do ecossistema <b>JavaScript</b> podem trabalhar em conjunto.
+  </p>
+</section>
+
+<section id="links" class="reveal" style="display:flex; align-items:center;flex-direction: column;">
+  <div class="eyebrow">Links</div><a href="https://github.com/Vidreiro98/Spoto" target="_blank" rel="noopener noreferrer">
+  <img src="github-logo.png" alt="GitHub Logo" class="github-logo" ></a>
+</section>
+
+      <section id="tech" class="tech">
+  <div class="eyebrow">Parte Técnica</div>
+  <h2><b>Descrição Técnica</b></h2>
+  <img src="projectOverview.png" alt="Diagrama de arquitetura do projeto" style="width:100%; max-width:600px; border-radius:20px; margin-bottom:20px;">
+</section>
+
+
+
+
+      <!-- Serviços (estrutura em cartões) -->
+      
+      <!-- CV âncora -->
+    
+
+  <footer>
+    <div class="mono">Construído com ♥ — cores do tema original, estrutura nova. © <span id="year"></span></div>
+    </footer>   
+ <script>
+  const form = document.getElementById('contact-form');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    emailjs.sendForm('Portofolio','template_lz0rk5l', this)
+      .then(() => {
+        alert('Obrigado! Mensagem enviada.');
+        form.reset();
+      }, (err) => {
+        alert('Erro ao enviar: ' + JSON.stringify(err));
+      });
+  });
+</script>
+    <script src="flag.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
